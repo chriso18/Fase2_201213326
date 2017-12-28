@@ -1,0 +1,10 @@
+C:\Users\Christian\Documents\[IPC2]VD2017\SCRIPT HTML\ClienteSynchro\ClienteSynchro\bin\Inicio.aspx
+C:\Users\Christian\Documents\[IPC2]VD2017\SCRIPT HTML\ClienteSynchro\ClienteSynchro\bin\Inicio.aspx.cs
+C:\Users\Christian\Documents\[IPC2]VD2017\SCRIPT HTML\ClienteSynchro\ClienteSynchro\bin\Inicio.aspx.designer.cs
+C:\Users\Christian\Documents\[IPC2]VD2017\SCRIPT HTML\ClienteSynchro\ClienteSynchro\bin\ClienteSynchro.dll.config
+C:\Users\Christian\Documents\[IPC2]VD2017\SCRIPT HTML\ClienteSynchro\ClienteSynchro\bin\ClienteSynchro.dll
+C:\Users\Christian\Documents\[IPC2]VD2017\SCRIPT HTML\ClienteSynchro\ClienteSynchro\bin\ClienteSynchro.pdb
+C:\Users\Christian\Documents\[IPC2]VD2017\SCRIPT HTML\ClienteSynchro\ClienteSynchro\bin\AjaxControlToolkit.dll
+C:\Users\Christian\Documents\[IPC2]VD2017\SCRIPT HTML\ClienteSynchro\ClienteSynchro\obj\Debug\ClienteSynchro.csprojResolveAssemblyReference.cache
+C:\Users\Christian\Documents\[IPC2]VD2017\SCRIPT HTML\ClienteSynchro\ClienteSynchro\obj\Debug\ClienteSynchro.dll
+C:\Users\Christian\Documents\[IPC2]VD2017\SCRIPT HTML\ClienteSynchro\ClienteSynchro\obj\Debug\ClienteSynchro.pdb

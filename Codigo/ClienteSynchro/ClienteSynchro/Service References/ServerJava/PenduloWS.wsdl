@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://SynchroWeb/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="PenduloWS" targetNamespace="http://SynchroWeb/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/PenduloSynchroWS/PenduloWS?xsd=1" namespace="http://SynchroWeb/" />
+    </xsd:schema>
+  </types>
+  <message name="ActualizarProyecto">
+    <part name="parameters" element="tns:ActualizarProyecto" />
+  </message>
+  <message name="ActualizarProyectoResponse">
+    <part name="parameters" element="tns:ActualizarProyectoResponse" />
+  </message>
+  <message name="hello">
+    <part name="parameters" element="tns:hello" />
+  </message>
+  <message name="helloResponse">
+    <part name="parameters" element="tns:helloResponse" />
+  </message>
+  <message name="ModificarUsuario">
+    <part name="parameters" element="tns:ModificarUsuario" />
+  </message>
+  <message name="ModificarUsuarioResponse">
+    <part name="parameters" element="tns:ModificarUsuarioResponse" />
+  </message>
+  <message name="EliminarUsuario">
+    <part name="parameters" element="tns:EliminarUsuario" />
+  </message>
+  <message name="EliminarUsuarioResponse">
+    <part name="parameters" element="tns:EliminarUsuarioResponse" />
+  </message>
+  <message name="AgregarUsuario">
+    <part name="parameters" element="tns:AgregarUsuario" />
+  </message>
+  <message name="AgregarUsuarioResponse">
+    <part name="parameters" element="tns:AgregarUsuarioResponse" />
+  </message>
+  <message name="ObtenerImagen">
+    <part name="parameters" element="tns:ObtenerImagen" />
+  </message>
+  <message name="ObtenerImagenResponse">
+    <part name="parameters" element="tns:ObtenerImagenResponse" />
+  </message>
+  <message name="AgregarGrupo">
+    <part name="parameters" element="tns:AgregarGrupo" />
+  </message>
+  <message name="AgregarGrupoResponse">
+    <part name="parameters" element="tns:AgregarGrupoResponse" />
+  </message>
+  <message name="AgregarHabilidad">
+    <part name="parameters" element="tns:AgregarHabilidad" />
+  </message>
+  <message name="AgregarHabilidadResponse">
+    <part name="parameters" element="tns:AgregarHabilidadResponse" />
+  </message>
+  <message name="AgregarProyecto">
+    <part name="parameters" element="tns:AgregarProyecto" />
+  </message>
+  <message name="AgregarProyectoResponse">
+    <part name="parameters" element="tns:AgregarProyectoResponse" />
+  </message>
+  <message name="EliminsrProyecto">
+    <part name="parameters" element="tns:EliminsrProyecto" />
+  </message>
+  <message name="EliminsrProyectoResponse">
+    <part name="parameters" element="tns:EliminsrProyectoResponse" />
+  </message>
+  <message name="AgregarTarea">
+    <part name="parameters" element="tns:AgregarTarea" />
+  </message>
+  <message name="AgregarTareaResponse">
+    <part name="parameters" element="tns:AgregarTareaResponse" />
+  </message>
+  <message name="ObtenerPass2">
+    <part name="parameters" element="tns:ObtenerPass2" />
+  </message>
+  <message name="ObtenerPass2Response">
+    <part name="parameters" element="tns:ObtenerPass2Response" />
+  </message>
+  <message name="ObtenerUsuario">
+    <part name="parameters" element="tns:ObtenerUsuario" />
+  </message>
+  <message name="ObtenerUsuarioResponse">
+    <part name="parameters" element="tns:ObtenerUsuarioResponse" />
+  </message>
+  <message name="ObtenerContra">
+    <part name="parameters" element="tns:ObtenerContra" />
+  </message>
+  <message name="ObtenerContraResponse">
+    <part name="parameters" element="tns:ObtenerContraResponse" />
+  </message>
+  <message name="ObtenerUsu2">
+    <part name="parameters" element="tns:ObtenerUsu2" />
+  </message>
+  <message name="ObtenerUsu2Response">
+    <part name="parameters" element="tns:ObtenerUsu2Response" />
+  </message>
+  <message name="AgregarConocimiento">
+    <part name="parameters" element="tns:AgregarConocimiento" />
+  </message>
+  <message name="AgregarConocimientoResponse">
+    <part name="parameters" element="tns:AgregarConocimientoResponse" />
+  </message>
+  <message name="VerificarUsuario">
+    <part name="parameters" element="tns:VerificarUsuario" />
+  </message>
+  <message name="VerificarUsuarioResponse">
+    <part name="parameters" element="tns:VerificarUsuarioResponse" />
+  </message>
+  <portType name="PenduloWS">
+    <operation name="ActualizarProyecto">
+      <input wsam:Action="http://SynchroWeb/PenduloWS/ActualizarProyectoRequest" message="tns:ActualizarProyecto" />
+      <output wsam:Action="http://SynchroWeb/PenduloWS/ActualizarProyectoResponse" message="tns:ActualizarProyectoResponse" />
+    </operation>
+    <operation name="hello">
+      <input wsam:Action="http://SynchroWeb/PenduloWS/helloRequest" message="tns:hello" />
+      <output wsam:Action="http://SynchroWeb/PenduloWS/helloResponse" message="tns:helloResponse" />
+    </operation>
+    <operation name="ModificarUsuario">
+      <input wsam:Action="http://SynchroWeb/PenduloWS/ModificarUsuarioRequest" message="tns:ModificarUsuario" />
+      <output wsam:Action="http://SynchroWeb/PenduloWS/ModificarUsuarioResponse" message="tns:ModificarUsuarioResponse" />
+    </operation>
+    <operation name="EliminarUsuario">
+      <input wsam:Action="http://SynchroWeb/PenduloWS/EliminarUsuarioRequest" message="tns:EliminarUsuario" />
+      <output wsam:Action="http://SynchroWeb/PenduloWS/EliminarUsuarioResponse" message="tns:EliminarUsuarioResponse" />
+    </operation>
+    <operation name="AgregarUsuario">
+      <input wsam:Action="http://SynchroWeb/PenduloWS/AgregarUsuarioRequest" message="tns:AgregarUsuario" />
+      <output wsam:Action="http://SynchroWeb/PenduloWS/AgregarUsuarioResponse" message="tns:AgregarUsuarioResponse" />
+    </operation>
+    <operation name="ObtenerImagen">
+      <input wsam:Action="http://SynchroWeb/PenduloWS/ObtenerImagenRequest" message="tns:ObtenerImagen" />
+      <output wsam:Action="http://SynchroWeb/PenduloWS/ObtenerImagenResponse" message="tns:ObtenerImagenResponse" />
+    </operation>
+    <operation name="AgregarGrupo">
+      <input wsam:Action="http://SynchroWeb/PenduloWS/AgregarGrupoRequest" message="tns:AgregarGrupo" />
+      <output wsam:Action="http://SynchroWeb/PenduloWS/AgregarGrupoResponse" message="tns:AgregarGrupoResponse" />
+    </operation>
+    <operation name="AgregarHabilidad">
+      <input wsam:Action="http://SynchroWeb/PenduloWS/AgregarHabilidadRequest" message="tns:AgregarHabilidad" />
+      <output wsam:Action="http://SynchroWeb/PenduloWS/AgregarHabilidadResponse" message="tns:AgregarHabilidadResponse" />
+    </operation>
+    <operation name="AgregarProyecto">
+      <input wsam:Action="http://SynchroWeb/PenduloWS/AgregarProyectoRequest" message="tns:AgregarProyecto" />
+      <output wsam:Action="http://SynchroWeb/PenduloWS/AgregarProyectoResponse" message="tns:AgregarProyectoResponse" />
+    </operation>
+    <operation name="EliminsrProyecto">
+      <input wsam:Action="http://SynchroWeb/PenduloWS/EliminsrProyectoRequest" message="tns:EliminsrProyecto" />
+      <output wsam:Action="http://SynchroWeb/PenduloWS/EliminsrProyectoResponse" message="tns:EliminsrProyectoResponse" />
+    </operation>
+    <operation name="AgregarTarea">
+      <input wsam:Action="http://SynchroWeb/PenduloWS/AgregarTareaRequest" message="tns:AgregarTarea" />
+      <output wsam:Action="http://SynchroWeb/PenduloWS/AgregarTareaResponse" message="tns:AgregarTareaResponse" />
+    </operation>
+    <operation name="ObtenerPass2">
+      <input wsam:Action="http://SynchroWeb/PenduloWS/ObtenerPass2Request" message="tns:ObtenerPass2" />
+      <output wsam:Action="http://SynchroWeb/PenduloWS/ObtenerPass2Response" message="tns:ObtenerPass2Response" />
+    </operation>
+    <operation name="ObtenerUsuario">
+      <input wsam:Action="http://SynchroWeb/PenduloWS/ObtenerUsuarioRequest" message="tns:ObtenerUsuario" />
+      <output wsam:Action="http://SynchroWeb/PenduloWS/ObtenerUsuarioResponse" message="tns:ObtenerUsuarioResponse" />
+    </operation>
+    <operation name="ObtenerContra">
+      <input wsam:Action="http://SynchroWeb/PenduloWS/ObtenerContraRequest" message="tns:ObtenerContra" />
+      <output wsam:Action="http://SynchroWeb/PenduloWS/ObtenerContraResponse" message="tns:ObtenerContraResponse" />
+    </operation>
+    <operation name="ObtenerUsu2">
+      <input wsam:Action="http://SynchroWeb/PenduloWS/ObtenerUsu2Request" message="tns:ObtenerUsu2" />
+      <output wsam:Action="http://SynchroWeb/PenduloWS/ObtenerUsu2Response" message="tns:ObtenerUsu2Response" />
+    </operation>
+    <operation name="AgregarConocimiento">
+      <input wsam:Action="http://SynchroWeb/PenduloWS/AgregarConocimientoRequest" message="tns:AgregarConocimiento" />
+      <output wsam:Action="http://SynchroWeb/PenduloWS/AgregarConocimientoResponse" message="tns:AgregarConocimientoResponse" />
+    </operation>
+    <operation name="VerificarUsuario">
+      <input wsam:Action="http://SynchroWeb/PenduloWS/VerificarUsuarioRequest" message="tns:VerificarUsuario" />
+      <output wsam:Action="http://SynchroWeb/PenduloWS/VerificarUsuarioResponse" message="tns:VerificarUsuarioResponse" />
+    </operation>
+  </portType>
+  <binding name="PenduloWSPortBinding" type="tns:PenduloWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="ActualizarProyecto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="hello">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ModificarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="EliminarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="AgregarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ObtenerImagen">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="AgregarGrupo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="AgregarHabilidad">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="AgregarProyecto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="EliminsrProyecto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="AgregarTarea">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ObtenerPass2">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ObtenerUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ObtenerContra">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ObtenerUsu2">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="AgregarConocimiento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="VerificarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="PenduloWS">
+    <port name="PenduloWSPort" binding="tns:PenduloWSPortBinding">
+      <soap:address location="http://localhost:8080/PenduloSynchroWS/PenduloWS" />
+    </port>
+  </service>
+</definitions>

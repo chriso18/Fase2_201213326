@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://SynchroWeb/" targetNamespace="http://SynchroWeb/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ActualizarProyecto" type="tns:ActualizarProyecto" />
+  <xs:element name="ActualizarProyectoResponse" type="tns:ActualizarProyectoResponse" />
+  <xs:element name="AgregarConocimiento" type="tns:AgregarConocimiento" />
+  <xs:element name="AgregarConocimientoResponse" type="tns:AgregarConocimientoResponse" />
+  <xs:element name="AgregarGrupo" type="tns:AgregarGrupo" />
+  <xs:element name="AgregarGrupoResponse" type="tns:AgregarGrupoResponse" />
+  <xs:element name="AgregarHabilidad" type="tns:AgregarHabilidad" />
+  <xs:element name="AgregarHabilidadResponse" type="tns:AgregarHabilidadResponse" />
+  <xs:element name="AgregarProyecto" type="tns:AgregarProyecto" />
+  <xs:element name="AgregarProyectoResponse" type="tns:AgregarProyectoResponse" />
+  <xs:element name="AgregarTarea" type="tns:AgregarTarea" />
+  <xs:element name="AgregarTareaResponse" type="tns:AgregarTareaResponse" />
+  <xs:element name="AgregarUsuario" type="tns:AgregarUsuario" />
+  <xs:element name="AgregarUsuarioResponse" type="tns:AgregarUsuarioResponse" />
+  <xs:element name="EliminarUsuario" type="tns:EliminarUsuario" />
+  <xs:element name="EliminarUsuarioResponse" type="tns:EliminarUsuarioResponse" />
+  <xs:element name="EliminsrProyecto" type="tns:EliminsrProyecto" />
+  <xs:element name="EliminsrProyectoResponse" type="tns:EliminsrProyectoResponse" />
+  <xs:element name="ModificarUsuario" type="tns:ModificarUsuario" />
+  <xs:element name="ModificarUsuarioResponse" type="tns:ModificarUsuarioResponse" />
+  <xs:element name="ObtenerContra" type="tns:ObtenerContra" />
+  <xs:element name="ObtenerContraResponse" type="tns:ObtenerContraResponse" />
+  <xs:element name="ObtenerImagen" type="tns:ObtenerImagen" />
+  <xs:element name="ObtenerImagenResponse" type="tns:ObtenerImagenResponse" />
+  <xs:element name="ObtenerPass2" type="tns:ObtenerPass2" />
+  <xs:element name="ObtenerPass2Response" type="tns:ObtenerPass2Response" />
+  <xs:element name="ObtenerUsu2" type="tns:ObtenerUsu2" />
+  <xs:element name="ObtenerUsu2Response" type="tns:ObtenerUsu2Response" />
+  <xs:element name="ObtenerUsuario" type="tns:ObtenerUsuario" />
+  <xs:element name="ObtenerUsuarioResponse" type="tns:ObtenerUsuarioResponse" />
+  <xs:element name="VerificarUsuario" type="tns:VerificarUsuario" />
+  <xs:element name="VerificarUsuarioResponse" type="tns:VerificarUsuarioResponse" />
+  <xs:element name="hello" type="tns:hello" />
+  <xs:element name="helloResponse" type="tns:helloResponse" />
+  <xs:complexType name="ActualizarProyecto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="xs:string" />
+      <xs:element minOccurs="0" name="monto" type="xs:string" />
+      <xs:element minOccurs="0" name="visibilidad" type="xs:string" />
+      <xs:element minOccurs="0" name="logo" type="xs:string" />
+      <xs:element minOccurs="0" name="responsable" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ActualizarProyectoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ObtenerContra">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="pass" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ObtenerContraResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:usuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="usuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellido" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="imagen" type="xs:string" />
+      <xs:element minOccurs="0" name="nacimiento" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ObtenerUsu2">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="pass" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ObtenerUsu2Response">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ObtenerUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="pass" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ObtenerUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:usuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AgregarUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="apellido" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="pass" type="xs:string" />
+      <xs:element minOccurs="0" name="nacimiento" type="xs:string" />
+      <xs:element minOccurs="0" name="imagen" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AgregarUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ModificarUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="apellido" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="pass" type="xs:string" />
+      <xs:element minOccurs="0" name="nacimiento" type="xs:string" />
+      <xs:element minOccurs="0" name="banco" type="xs:string" />
+      <xs:element minOccurs="0" name="imagen" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ModificarUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ObtenerImagen">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="pass" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ObtenerImagenResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AgregarGrupo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="logo" type="xs:string" />
+      <xs:element minOccurs="0" name="lider" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AgregarGrupoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hello">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="helloResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AgregarTarea">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="xs:string" />
+      <xs:element minOccurs="0" name="participantes" type="xs:string" />
+      <xs:element minOccurs="0" name="monto" type="xs:string" />
+      <xs:element minOccurs="0" name="pertenece" type="xs:string" />
+      <xs:element minOccurs="0" name="visibilidad" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AgregarTareaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AgregarProyecto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="responsable" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="xs:string" />
+      <xs:element minOccurs="0" name="costo" type="xs:string" />
+      <xs:element minOccurs="0" name="visibilidad" type="xs:string" />
+      <xs:element minOccurs="0" name="logo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AgregarProyectoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EliminarUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Alias" type="xs:string" />
+      <xs:element minOccurs="0" name="Correo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EliminarUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AgregarConocimiento">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AgregarConocimientoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ObtenerPass2">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="pass" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ObtenerPass2Response">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VerificarUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="pass" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VerificarUsuarioResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AgregarHabilidad">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AgregarHabilidadResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EliminsrProyecto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="responsable" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EliminsrProyectoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
